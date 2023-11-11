@@ -1,7 +1,6 @@
 public abstract class  Animal extends AliveEntity {
-
     @Override
-    public void Reproduce() {
-
+    public AliveEntity Reproduce() {
+        return null;
     }
 }

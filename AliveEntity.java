@@ -16,5 +16,5 @@ public abstract class AliveEntity {
 //    public void setChance(float chance) {
 //        this.chance = chance;
 //    }
-    public abstract void Reproduce();
+    public abstract AliveEntity Reproduce();
 }

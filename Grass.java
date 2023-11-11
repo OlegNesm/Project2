@@ -1,6 +1,6 @@
 public class Grass extends AliveEntity {
     @Override
-    public void Reproduce() {
-
+    public Grass Reproduce() {
+        return new Grass();
     }
 }
