@@ -31,13 +31,6 @@ public class Island {
             System.out.println();
         }
         System.out.println(islIn);
-//        Animal animal = new Animal() {
-//            @Override
-//            public Animal Reproduce() {
-//                super.Reproduce();
-//                return null;
-//            }
-//        };
 
 
         ArrayList<ArrayList<Animal>> islandOfAnimal = new ArrayList<ArrayList<Animal>>();
