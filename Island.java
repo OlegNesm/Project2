@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Island {
@@ -32,7 +33,25 @@ public class Island {
         }
         System.out.println(islIn);
 
-
         ArrayList<ArrayList<Animal>> islandOfAnimal = new ArrayList<ArrayList<Animal>>();
+
+        List<String> ani = new ArrayList<>();
+        ani.add("caterpillar.200");
+        ani.add("grass.100");
+        ani.add("bear.5");
+        ani.add("boa.30");
+        ani.add("buffalo.10");
+        ani.add("deep.20");
+        ani.add("duck.200");
+        ani.add("eagle.20");
+        ani.add("fox.30");
+        ani.add("goat.140");
+        ani.add("horse.20");
+        ani.add("mouse.500");
+        ani.add("rabbit.150");
+        ani.add("sheep.140");
+        ani.add("wolf.30");
+        ani.add("boar.50");
+
     }
 }
