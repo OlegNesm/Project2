@@ -28,7 +28,7 @@ public class Fabrica extends AliveEntity{
             case "deep":
                 aliveEntity= new Deep();
                 new Deep();
-            case " rabbit":
+            case "rabbit":
                 aliveEntity= new Rabbit();
                 new Rabbit();
             case "mouse":

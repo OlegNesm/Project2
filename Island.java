@@ -33,7 +33,7 @@ public class Island {
         }
         System.out.println(islIn);
 
-        ArrayList<ArrayList<Animal>> islandOfAnimal = new ArrayList<ArrayList<Animal>>();
+        List<AliveEntity> islandOfAnimal = new ArrayList<>();
 
         List<String> ani = new ArrayList<>();
         ani.add("caterpillar.200");
@@ -52,6 +52,33 @@ public class Island {
         ani.add("sheep.140");
         ani.add("wolf.30");
         ani.add("boar.50");
+//        System.out.println(ani);
+
+//      fillTheIsland(ani, islandOfAnimal);
+        System.out.println(islandOfAnimal);
 
     }
+    public static void fillTheIsland (List<String>  ani, List<AliveEntity> lists) {
+        for (int i = 0; i < ani.size(); i++) {
+            String s = ani.get(i);
+//            System.out.println(s);
+            String s1 = s.substring(0, s.indexOf('.'));  // вытягиваю наименование животного
+//            System.out.println(s1);
+            String s2 = s.substring(s.indexOf('.')+1); // вытягиваю его мах популяцию
+//            System.out.println(s2);
+//            System.out.println();
+//            int population = Integer.parseInt(s2); //
+//            System.out.println(population);
+            double pop = Math.random()* (Integer.parseInt(s2)) ; // получаю рандомное значение для заселения
+            int popReliz = (int) pop; // преобразую дабл в инт
+//            System.out.println(popReliz);
+            for (int j = 0; j <popReliz ; j++) {
+                lists.add(Fabrica.createEntity(s1));
+            }
+
+        }
+
+    }
+
+
 }
